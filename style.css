@@ -1,0 +1,116 @@
+.hero {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    gap: 10px;
+    padding: 10px;
+    background-color: lightblue;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg);
+    background-size: cover;
+    
+}
+
+.cardsparant{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: #692B78;
+    
+}
+
+.card {
+    background-color: #99237A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mywebsite{
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    
+}
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    
+}
+
+.footer   {
+    display: flex;
+    justify-content: center;
+    background-color: #503283;
+    width: 100%;
+    padding: 4px;
+}
+
+* {
+    color: white;
+}
+
+.header {
+    background-color: #503283;
+    align-content: center;
+}
+
+.header div {
+    padding: 10px;
+}
+.cardsparant2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #692B78;
+}
+
+.cardsparant2 .card {
+    width: 400px; 
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .cardsparant{
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap: 10px;
+    padding: 10px;
+    background-color: #692B78;
+    }
+    .cardsparant2 .card {
+        width: 80%; 
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cardsparant{
+        display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #692B78;
+    width: 100%;
+
+    }
+    .cardsparant2 .card {
+        width: 100%; 
+    }
+}
+
+.image {
+    height: 200px;
+    width: 80%;
+    background-color: #503283;
+}
